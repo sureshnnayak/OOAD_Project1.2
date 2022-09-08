@@ -1,0 +1,24 @@
+Test case 1:
+    Input array is: 
+    1.0, 2.0, 3.0, 4.0, 5.0, 4.0, 3.0, 4.0, 2.0, 3.0, 4.0, 5.0, 4.0, 3.0, 5.0, 6.0, 
+    Median is :5.0
+    Mean is :4.4375
+    Mode is :5.0
+    Varience is :1.62109375
+    standard Deviation is :1.27322179921646
+    Minimum Value is :1.0
+    Maximum Value is :6.0
+    Maximum occurence is :11.0for value: 5.0
+    (base) Sureshs-MacBook-Air:project 1 suresh$ 
+Test 2:
+    Input array is: 
+    1.23, 2.45, 34.2, 2.34, 2.322, 3.44, 5.3, 2.3, 4.3, 1.2, 1.4, 1.2, 1.2432, 5.34, 654.3, 
+    Median is :34.2
+    Mean is :71.225334
+    Mode is :34.2
+    Varience is :24403.729923395273
+    standard Deviation is :156.2169322557426
+    Minimum Value is :1.23
+    Maximum Value is :654.3
+    Maximum occurence is :12.0for value: 34.2
+    (base) Sureshs-MacBook-Air:project 1 suresh$ 

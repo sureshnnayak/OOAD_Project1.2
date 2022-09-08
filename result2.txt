@@ -1,0 +1,9 @@
+Enter the string:
+Bruce
+BCERUURECB
+Enter the string:
+Suresh N Nayak
+AAEHKNNRSSUYYUSSRNNKHEAA
+Enter the string:
+
+(base) Sureshs-MacBook-Air:project 1 suresh$ 
