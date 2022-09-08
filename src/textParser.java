@@ -20,6 +20,7 @@ public class textParser {
 
 class Processor{
     public String read(){
+        // creating a scanner object
         Scanner scan = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter the string:");
         String str = scan.nextLine();
@@ -28,7 +29,9 @@ class Processor{
 
     public String clean(String txt){
         //reff: https://www.geeksforgeeks.org/how-to-remove-all-white-spaces-from-a-string-in-java/
+        //converting all charecters to uppre case 
         String str = txt.toUpperCase();
+        //replacing space 
         str = str.replaceAll("\\s", "");
         return str;
         
@@ -37,8 +40,8 @@ class Processor{
     public String sort(String str){
         // Reff: https://www.geeksforgeeks.org/sort-string-characters/
         char []arr = str.toCharArray();
-        Arrays.sort(arr);
-        //sorted = new String(arr);
+        Arrays.sort(arr);// sort the array
+
         return new String(arr);
 
     }
@@ -48,11 +51,11 @@ class Processor{
   
         byte[] str1 = new byte[strAsByteArray.length];
   
-        // Store result in reverse order into the
-        // result byte[]
+        // Store result in reverse order into the result byte[]
         for (int i = 0; i < strAsByteArray.length; i++)
             str1[i] = strAsByteArray[strAsByteArray.length - i - 1];
         String str2 = new String(str1);
+        //combine original string and the reversed strign 
         String result = input + str2;
         return result;
 

@@ -38,17 +38,19 @@ public class reader {
 class Analyzer{
         /*median */
         public void analyze (float inputArray[], int n){
-            median(inputArray,n);
-            mean(inputArray,n);
-            mode(inputArray,n);
-            variance(inputArray,n);
-            standardDeviation(inputArray,n);
-            minimumValue(inputArray,n);
-            maximumValue(inputArray,n);
-            maximumOccurrences(inputArray,n);
+            median(inputArray,n); // compute and print median
+            mean(inputArray,n);// compute and print mean
+            mode(inputArray,n);// compute and print memodedian
+            variance(inputArray,n);// compute and print variance
+            standardDeviation(inputArray,n);// compute and print standardDeviation
+            minimumValue(inputArray,n);// compute and print minimumValue
+            maximumValue(inputArray,n);// compute and print maximumValue
+            maximumOccurrences(inputArray,n);// compute and print maximumOccurrences
         }
         public float median(float inputArray[], int n){
             float temp ;
+
+            //sorting the array
             for (int i = 0; i <n; i++){
                 for(int j=i; j<n; j++){
                     
@@ -59,6 +61,7 @@ class Analyzer{
                     }
                 }
             }
+            //finding mode
             float result = inputArray[(int)(n/2)];
             System.out.println("Median is :"+ result);
             return result;
@@ -68,11 +71,12 @@ class Analyzer{
         public float mean(float [] inputArray, int n){
             float result = 0;
             float arrSum = 0;
-
+            //finding array sum
             for (int i =0; i < n; i++){
                 
                 arrSum += inputArray[i];
             }
+            //mean
             result = arrSum/n;
             System.out.println("Mean is :"+ result);
     
@@ -83,6 +87,7 @@ class Analyzer{
         public float mode(float inputArray[], int n){
             
             float maxCount= 0, result = 0;
+
             for (int i = 0; i < n; ++i) {
                 float count = 0;
                 for (int j = 0; j < n; ++j) {
@@ -103,6 +108,7 @@ class Analyzer{
         public double variance(float inputArray[], int n){
             //reff : https://www.geeksforgeeks.org/program-for-variance-and-standard-deviation-of-an-array/
             double sum = 0;
+            //sum
             for (int i = 0; i < n; i++){
                 sum += inputArray[i];
             }
@@ -110,6 +116,7 @@ class Analyzer{
                         (double)n;
 
             double sqDiff = 0;
+            // mean square difference
             for (int i = 0; i < n; i++)
                 sqDiff += (inputArray[i] - mean) *
                         (inputArray[i] - mean);
